@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOBY・GEAR</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        body {
+  font-family: sans-serif;
+}
+        .hed{
+            border: solid;
+            z-index: 2;
+            position: fixed;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            height:100vh;
+            width:10vw;
+            border-color:gray;
+            
+            
+        }
+        h1{
+            border-right: solid;
+            border-left: solid;
+            padding-left:15%;
+            padding-right: 15%;
+            border-color: gray;
+            transform: rotate(90deg);
+            white-space: nowrap
+        }
+        .slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slide-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slider-1 24s linear infinite;
+  padding:5px;
+}
+
+.slide-image:nth-child(1) {
+  background-image: url(top.jpg);
+  animation-delay: -2s;
+}
+
+.slide-image:nth-child(2) {
+  background-image: url(23341507_l.jpg);
+  animation-delay: 6s;
+}
+
+.slide-image:nth-child(3) {
+  background-image: url(23390032_l.jpg);
+  animation-delay: 14s;
+}
+
+
+
+@keyframes slider-1 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  4.16% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  41.66% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+h2{
+    color:white;
+    font-size: large;
+    
+}
+.content2{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+.contet-c{
+    width:30vw;
+    height:30vw;
+}
+.content2-1{
+    background-image: url(23341464_l.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-2{
+    background-image: url(23341497_l.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-3{
+    background-image: url(23341257_l.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-4{
+    background-image: url(IMG_0768.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-5{
+    background-image: url(IMG_2637.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-6{
+    background-image: url(IMG_2638.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-7{
+    background-image: url(IMG_1765.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-8{
+    background-image: url(IMG_2613.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-9{
+    background-image: url(IMG_1129.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-10{
+    background-image: url(23308872_l.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-11{
+    background-image: url(IMG_2283.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2-12{
+    background-image: url(IMG_2071.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wp{
+    display: flex;
+    justify-content: end;
+
+}
+
+.fot{
+    padding:5%;
+    box-sizing: border-box;
+    font-size: large;
+    width:90vw;
+    background-color: black;
+
+}
+.fot h2{
+    border-bottom: solid;
+    border-color:gray;
+}
+
+.fot-content{
+    padding:5%;
+    color:white;
+}
+.fot p{
+    padding:2%;
+}
+.content2-1 p{
+    color:white;
+}
+.content2-4 p{
+    color:white;
+}
+.content2-5 p{
+    color:white;
+}
+.content2-7 p{
+    color:white;
+}
+.content2-8 p{
+    color:white;
+}
+.content2-11 p{
+    color:white;
+}
+.content2-12 p{
+    color:white;
+}
+
+.content2 p{
+    font-size: medium;
+    padding:3%;
+}
+@media screen and (max-width: 767px) {
+/* ここに横幅が767px以下の時に発動するスタイルを記述 */
+.hed{
+    height:7vh;
+    width:100vw;
+
+}
+h1{
+    transform: none;
+}
+h2{
+    font-size: 5%;
+}
+.contet-c{
+    width:50vw;
+    height:50vw;
+}
+.fot{
+    width:100vw;
+}
+.fot h2{
+    font-size: large;
+}
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="hed">
+        <h1>HOBY・GEAR</h1>
+    </div>
+    <div class="slide">
+        <div class="slide-image">
+            <h2>このページでは、私の持ち物を12個,紹介します。</h2>
+        </div>
+        <div class="slide-image">
+            <h2>下に私の持っているものの写真があります。</h2>
+        </div>
+        <div class="slide-image">
+            <h2>下にスクロール
+            </h2>
+        </div>
+ 
+   </div>
+   <div class="content2">
+    <div class="content2-1 contet-c"><p>1</p></div>
+    <div class="content2-2 contet-c"><p>2</p></div>
+    <div class="content2-3 contet-c"><p>3</p></div>
+    <div class="content2-4 contet-c"><p>4</p></div>
+    <div class="content2-5 contet-c"><p>5</p></div>
+    <div class="content2-6 contet-c"><p>6</p></div>
+    <div class="content2-7 contet-c"><p>7</p></div>
+    <div class="content2-8 contet-c"><p>8</p></div>
+    <div class="content2-9 contet-c"><p>9</p></div>
+    <div class="content2-10 contet-c"><p>10</p></div>
+    <div class="content2-11 contet-c"><p>11</p></div>
+    <div class="content2-12 contet-c"><p>12</p></div>
+</div>
+<div class="wp">
+    <div class="fot">
+        <h2>持ち物詳細</h2>
+        <div class="fot-content">
+            <p>1.パソコン</p>
+            <p>2.リール</p>
+            <p>3.タックル</p>
+            <p>4.タイヤ</p>
+            <p>5.車</p>
+            <p>6.自転車</p>
+            <p>7.香水</p>
+            <p>8.タップ</p>
+            <p>9.全自動麻雀卓</p>
+            <p>10.ルアー</p>
+            <p>11.スタットレスタイヤ</p>
+            <p>12.スノーボード</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
